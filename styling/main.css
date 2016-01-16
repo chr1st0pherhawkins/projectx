@@ -1,3 +1,29 @@
+body {
+  text-align: center;
+  background-color: #000;
+  color: white; }
 
+.header_wrapper {
+  background-image: url("../optimised/headerimage.jpg");
+  background-size: cover;
+  height: cover;
+  padding-bottom: 200px;
+  padding-top: 200px; }
+  .header_wrapper .main_title, .header_wrapper .sub_title {
+    text-align: center;
+    color: #fff; }
+
+nav {
+  float: center;
+  padding: 5px; }
+  nav a {
+    color: white; }
+    nav a:hover {
+      color: #E0FFFF; }
+
+section {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 /*# sourceMappingURL=main.css.map */
