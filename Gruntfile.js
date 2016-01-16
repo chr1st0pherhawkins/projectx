@@ -33,26 +33,28 @@ module.exports = function(grunt) {
       ],
     },
 
-    imagemin: {                          // Task 
-      dynamic: {                         // Another target 
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
         files: [{
-          expand: true,                  // Enable dynamic expansion 
-          cwd: 'images/',                // Src matches are relative to this path 
-          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match 
-          dest: 'optimised/'        // Destination path prefix 
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'images/',                // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'optimised/'        // Destination path prefix
         }]
       },
- },
-  concat: {
-    options: {
-      separator: ';',
     },
-    dist: {
-      src: ['src/js/*.js'],
-      dest: 'grouped/allbuilt.js',
+
+    concat: {
+      options: {
+        separator: ';',
+        },
+        dist: {
+          src: ['src/js/*.js'],
+          dest: 'grouped/allbuilt.js',
+        },
     },
-  },
   });
+
   // Load the plugin that provides the task.
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
