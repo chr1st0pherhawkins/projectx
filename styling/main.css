@@ -1,7 +1,8 @@
 body {
   text-align: center;
   background-color: #000;
-  color: #b3e6ff; }
+  color: #b3e6ff;
+  font-size: 20px; }
 
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
@@ -11,14 +12,21 @@ body {
   padding-top: 200px; }
   .header_wrapper .main_title, .header_wrapper .sub_title {
     text-align: center;
-    color: #b3e6ff; }
+    color: #b3e6ff;
+    font-size: 3.5em; }
+  .header_wrapper .sub_title {
+    font-size: 2em; }
 
-nav {
+nav ul {
   float: center;
   padding: 5px; }
-  nav a {
-    color: #b3e6ff; }
-    nav a:hover {
+  nav ul li {
+    display: inline-block;
+    padding: 5px 10px; }
+  nav ul a {
+    color: #b3e6ff;
+    text-decoration: none; }
+    nav ul a:hover {
       color: #ffbb99; }
 
 section {

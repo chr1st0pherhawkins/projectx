@@ -2,9 +2,10 @@ $textColor : #b3e6ff;
 $hoverText : #ffbb99;
 
 body {
-text-align:center;
-background-color:#000;
-color:$textColor;
+	text-align:center;
+	background-color:#000;
+	color:$textColor;
+	font-size: 20px;
 }
 
 .header_wrapper {
@@ -17,25 +18,30 @@ color:$textColor;
 	.main_title{
 		text-align: center;
 		color:$textColor;
+		font-size: 3.5em;
 	}
 
 	.sub_title{
 		@extend .main_title;
+		font-size: 2em;
 	}
 }
 
-nav {
+nav ul {
 	float:center;
 	padding:5px;
-
-	a{
-		color:$textColor;
-
-		&:hover{
-			color:$hoverText;
+		li {
+			display: inline-block;
+			padding: 5px 10px;
+		}
+		a{
+			color:$textColor;
+			text-decoration: none;
+			&:hover{
+				color:$hoverText;
+			}
 		}
 	}
-}
 
 section {
 	width:80%;
