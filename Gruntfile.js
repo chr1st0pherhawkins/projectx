@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build:{
-        src:'src/*.js',
+        src:'src/main.js',
         dest:'js/script.min.js'
       },
     },
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['src/scss/*.scss'],
+        files: ['src/scss/main.scss'],
         tasks: ['sass'],
         options: {
           spawn: false,
@@ -43,6 +43,15 @@ module.exports = function(grunt) {
         }]
       },
  },
+  concat: {
+    options: {
+      separator: ';',
+    },
+    dist: {
+      src: ['src/js/*.js'],
+      dest: 'grouped/allbuilt.js',
+    },
+  },
   });
   // Load the plugin that provides the task.
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -56,3 +65,4 @@ module.exports = function(grunt) {
   grunt.registerTask('default',['uglify:build','sass','watch','concat']);
   grunt.registerTask('sasslint',['scsslint']);
   grunt.registerTask('image',['imagemin']);
+};
