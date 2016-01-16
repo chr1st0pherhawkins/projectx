@@ -1,42 +1,72 @@
-body{
-text-align:center;
-background-color:#000;
-color:white;
+$main-background: #000000;
+$main-fontcolor:#ffffff;
+
+@mixin body{
+  text-align:center;
+  background-color:$main-background;
+  color:$main-fontcolor;
 }
 
-	
-.header_wrapper{
+body {
+@include body;
+}
+
+h4 {
+	font-size:26px;
+}
+
+.header_wrapper {
 	background-image:url('../optimised/headerimage.jpg');
 	background-size:cover;
 	height: cover;
 	padding-bottom: 200px;
 	padding-top:200px;
 
-	.main_title{
+	.main_title {
 		text-align: center;
 		color: #fff;
 	}
-	.sub_title{
+
+	.sub_title {
 		@extend .main_title;
 	}
 }
-nav{
-	float:center; 
-	padding:5px;
-	a{
-		color:white;
-		&:hover{
-			color: #E0FFFF;
-		}
-	}
+
+nav {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		position: fixed;
+		top: 0;
+		width: 100%;
+
+   li {
+    float:left;
+    list-style: none;
+    border-right: 1px solid #bbb;
+    a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration:none;
+     &:hover {
+      background-color:#111;
+    }
+  }
+}
+}
 }
 
-section{
+section {
 	width:80%;
-		padding-left:10%;
-		padding-right:10%;
-	article:{
-	
+	padding-left:10%;
+	padding-right:10%;
+	background-color:$main-background;
+	article {
+		background-color:$main-background;
 	}
-
 }
