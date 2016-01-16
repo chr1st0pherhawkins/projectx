@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background-color: #000;
-  color: white; }
+  color: #b3e6ff; }
 
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
@@ -11,15 +11,15 @@ body {
   padding-top: 200px; }
   .header_wrapper .main_title, .header_wrapper .sub_title {
     text-align: center;
-    color: #fff; }
+    color: #b3e6ff; }
 
 nav {
   float: center;
   padding: 5px; }
   nav a {
-    color: white; }
+    color: #b3e6ff; }
     nav a:hover {
-      color: #E0FFFF; }
+      color: #ffbb99; }
 
 section {
   width: 80%;
