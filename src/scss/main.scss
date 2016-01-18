@@ -1,11 +1,12 @@
-$main-background:#000000;
-$main-fontcolor:#b3e6ff;
-$hoverText : #ffbb99;
+$main-background: #000000;
+$main-fontcolor: #b3e6ff;
+$hoverText: #ffbb99;
 
 @mixin body{
   text-align:center;
   background-color:$main-background;
   color:$main-fontcolor;
+  font-size: 20px;
 }
 
 body {
@@ -15,16 +16,6 @@ body {
 h4 {
 	font-size:26px;
 }
-
-
-
-body {
-	text-align:center;
-	background-color:#000;
-	color:$main-fontcolor;
-	font-size: 20px;
-}
-
 
 .header_wrapper {
 	background-image:url('../optimised/headerimage.jpg');
@@ -38,7 +29,6 @@ body {
 		color:$main-fontcolor;
 		font-size: 3.5em;
 	}
-
 
 	.sub_title{
 		@extend .main_title;
@@ -58,39 +48,41 @@ nav {
 		top: 0;
 		width: 100%;
 
-   li {
-    float:left;
-    list-style: none;
-    border-right: 1px solid #bbb;
-    a {
-     display: block;
-     color: white;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration:none;
-     &:hover {
-      background-color:#111;
+     li {
+      float:left;
+      list-style: none;
+      border-right: 1px solid #bbb;
+
+        a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration:none;
+         &:hover {
+          background-color:#111;
+        }
+      }
     }
   }
-}
-}
 }
 
 nav ul {
 	float:center;
 	padding:5px;
-		li {
-			display: inline-block;
-			padding: 5px 10px;
-		}
-		a{
-			color:$textColor;
-			text-decoration: none;
-			&:hover{
-				color:$hoverText;
-			}
+	li {
+		display: inline-block;
+		padding: 5px 10px;
+	}
+
+  a{
+		color: $main-fontcolor;
+		text-decoration: none;
+		&:hover{
+			color:$hoverText;
 		}
 	}
+}
 
 
 section {
@@ -102,11 +94,8 @@ section {
 	}
 }
 
-
-	article{
+article{
 		img{
 			max-width: 100%;
 		}
 	}
-}
-

@@ -1,16 +1,11 @@
 body {
   text-align: center;
-<<<<<<< HEAD
   background-color: #000000;
-  color: #ffffff; }
+  color: #b3e6ff;
+  font-size: 20px; }
 
 h4 {
   font-size: 26px; }
-=======
-  background-color: #000;
-  color: #b3e6ff;
-  font-size: 20px; }
->>>>>>> 9e79ea2e1eb6341b21b1ed50d80dc687804aea53
 
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
@@ -26,7 +21,6 @@ h4 {
     font-size: 2em; }
 
 nav ul {
-<<<<<<< HEAD
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -47,7 +41,8 @@ nav ul {
       text-decoration: none; }
       nav ul li a:hover {
         background-color: #111; }
-=======
+
+nav ul {
   float: center;
   padding: 5px; }
   nav ul li {
@@ -58,20 +53,15 @@ nav ul {
     text-decoration: none; }
     nav ul a:hover {
       color: #ffbb99; }
->>>>>>> 9e79ea2e1eb6341b21b1ed50d80dc687804aea53
 
 section {
   width: 80%;
   padding-left: 10%;
-<<<<<<< HEAD
-  padding-right: 10%;
-  background-color: #000000; }
+  padding-right: 10%; }
   section article {
     background-color: #000000; }
-=======
-  padding-right: 10%; }
-  section article img {
-    max-width: 100%; }
->>>>>>> 9e79ea2e1eb6341b21b1ed50d80dc687804aea53
+
+article img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
