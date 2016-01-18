@@ -1,5 +1,7 @@
-$main-background: #000000;
-$main-fontcolor:#ffffff;
+<<<<<<< HEAD
+$main-background:#000000;
+$main-fontcolor:#b3e6ff;
+$hoverText : #ffbb99;
 
 @mixin body{
   text-align:center;
@@ -15,6 +17,16 @@ h4 {
 	font-size:26px;
 }
 
+
+
+body {
+	text-align:center;
+	background-color:#000;
+	color:$main-fontcolor;
+	font-size: 20px;
+}
+
+
 .header_wrapper {
 	background-image:url('../optimised/headerimage.jpg');
 	background-size:cover;
@@ -24,13 +36,17 @@ h4 {
 
 	.main_title {
 		text-align: center;
-		color: #fff;
+		color:$main-fontcolor;
+		font-size: 3.5em;
 	}
 
-	.sub_title {
+
+	.sub_title{
 		@extend .main_title;
+		font-size: 2em;
 	}
 }
+
 
 nav {
 	ul {
@@ -61,12 +77,37 @@ nav {
 }
 }
 
+nav ul {
+	float:center;
+	padding:5px;
+		li {
+			display: inline-block;
+			padding: 5px 10px;
+		}
+		a{
+			color:$textColor;
+			text-decoration: none;
+			&:hover{
+				color:$hoverText;
+			}
+		}
+	}
+
+
 section {
 	width:80%;
 	padding-left:10%;
 	padding-right:10%;
-	background-color:$main-background;
 	article {
 		background-color:$main-background;
 	}
 }
+
+
+	article{
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
