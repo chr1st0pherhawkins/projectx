@@ -56,6 +56,9 @@ body {
 h4 {
   font-size: 26px; }
 
+p {
+  font-size: 15px; }
+
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
   background-size: cover;
@@ -77,31 +80,25 @@ nav ul {
   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  float: center;
+  padding: 5px; }
   nav ul li {
     float: left;
     list-style: none;
-    border-right: 1px solid #bbb; }
+    border-right: 1px solid #fea814;
+    display: inline-block;
+    padding: 5px 10px; }
     nav ul li a {
       display: block;
       color: white;
       text-align: center;
       padding: 1px 1px;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #b3e6ff; }
       nav ul li a:hover {
-        background-color: #111; }
-
-nav ul {
-  float: center;
-  padding: 5px; }
-  nav ul li {
-    display: inline-block;
-    padding: 5px 10px; }
-  nav ul a {
-    color: #b3e6ff;
-    text-decoration: none; }
-    nav ul a:hover {
-      color: #ffbb99; }
+        background-color: #111;
+        color: #ffbb99; }
 
 section {
   width: 80%;

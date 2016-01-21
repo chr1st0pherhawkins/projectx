@@ -19,6 +19,10 @@ h4 {
 	font-size:26px;
 }
 
+p{
+	font-size:15px;
+}
+
 .header_wrapper {
 	background-image:url('../optimised/headerimage.jpg');
 	background-size:cover;
@@ -49,44 +53,31 @@ nav {
 		position: fixed;
 		top: 0;
 		width: 100%;
+		float:center;
+		padding:5px;
 
      li {
       float:left;
       list-style: none;
       border-right: 1px solid #fea814;
-
-
-
+      display: inline-block;
+		padding: 5px 10px;
         a {
          display: block;
          color: white;
          text-align: center;
          padding: 1px 1px;
          text-decoration:none;
+         color: $main-fontcolor;
          &:hover {
           background-color:#111;
+          color:$hoverText;
         }
       }
     }
   }
 }
 
-nav ul {
-	float:center;
-	padding:5px;
-	li {
-		display: inline-block;
-		padding: 5px 10px;
-	}
-
-  a{
-		color: $main-fontcolor;
-		text-decoration: none;
-		&:hover{
-			color:$hoverText;
-		}
-	}
-}
 
 
 section {
