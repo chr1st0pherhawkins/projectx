@@ -53,7 +53,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
-  grunt.registerTask('default',['uglify:build','sass','watch']);
+  grunt.registerTask('default',['uglify:build','sass']);
   grunt.registerTask('sasslint',['scsslint']);
   grunt.registerTask('image',['imagemin']);
 };
