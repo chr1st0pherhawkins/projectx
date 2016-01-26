@@ -61,6 +61,7 @@ p {
 
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
+  background-color: white;
   background-size: cover;
   height: cover;
   padding-bottom: 290px;
@@ -68,7 +69,12 @@ p {
   .header_wrapper .main_title, .header_wrapper .sub_title {
     text-align: center;
     color: #b3e6ff;
-    font-size: 3.5em; }
+    font-size: 3.5em;
+    background-color: rgba(128, 0, 128, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .header_wrapper .main_title:hover, .header_wrapper .sub_title:hover {
+      color: white; }
   .header_wrapper .sub_title {
     font-size: 2em; }
 
