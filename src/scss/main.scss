@@ -1,105 +1,99 @@
-@import "_reset.scss";
+@import '_reset.scss';
 
-$main-background: #000000;
+$main-background: #000;
 $main-fontcolor: #b3e6ff;
-$hoverText: #ffbb99;
 
-@mixin body{
+@mixin body {
   text-align:center;
   background-color:$main-background;
-  color:$main-fontcolor;
-  font-size: 20px;
+  color:$main-fontcolor ;
+  font-size: 20px ;
 }
 
 body {
-@include body;
+  @include body;
 }
 
 h4 {
-	font-size:26px;
+	font-size:26px ;
+}
+
+p {
+	font-size:16px;
 }
 
 .header_wrapper {
 	background-image:url('../optimised/headerimage.jpg');
 	background-size:cover;
 	height: cover;
-	padding-bottom: 200px;
-	padding-top:200px;
+	padding-bottom: 290px ;
+	padding-top:290px ;
 
 	.main_title {
 		text-align: center;
-		color:$main-fontcolor;
-		font-size: 3.5em;
-	}
+		color:$main-fontcolor ;
+		font-size: 3.5em ;
+    background-color:transparentize(purple, 0.5);
+    padding-top:15px;
+    padding-bottom:15px;
+    &:hover {
+      color:#fff;
+    }
+  }
 
-	.sub_title{
-		@extend .main_title;
-		font-size: 2em;
-	}
+  .sub_title {
+    @extend .main_title ;
+    font-size: 2em ;
+  }
 }
-
 
 nav {
 	ul {
 		list-style-type: none;
-		margin: 0;
-		padding: 0;
+		margin: 0 ;
+		padding: 0 ;
 		overflow: hidden;
-		background-color: #333;
+		background-color:transparentize(#333, 0.3);
 		position: fixed;
 		top: 0;
 		width: 100%;
+		float:center;
+		padding:5px;
 
-     li {
-      float:left;
-      list-style: none;
-      border-right: 1px solid #bbb;
-
-
-
-        a {
-         display: block;
-         color: white;
-         text-align: center;
-         padding: 1px 1px;
-         text-decoration:none;
-         &:hover {
-          background-color:#111;
-        }
-      }
+   li {
+    float:center;
+    list-style: none;
+    border-right: 1px solid #000099 ;
+    display: inline-block;
+    padding: 1px 7px ;
+    a {
+     color: $main-fontcolor ;
+     display: block;
+     padding: 1px 1px ;
+     text-align: center;
+     text-decoration:none;
+     &:hover {
+      color:transparentize($main-fontcolor, 0.3);
     }
   }
 }
-
-nav ul {
-	float:center;
-	padding:5px;
-	li {
-		display: inline-block;
-		padding: 5px 10px;
-	}
-
-  a{
-		color: $main-fontcolor;
-		text-decoration: none;
-		&:hover{
-			color:$hoverText;
-		}
-	}
 }
-
+}
 
 section {
 	width:80%;
 	padding-left:10%;
 	padding-right:10%;
 	article {
-		background-color:$main-background;
-	}
+    background-color:$main-background;
+    p{
+      float: right;
+    }
+  }
 }
 
-article{
-		img{
-			max-width: 100%;
-		}
-	}
+article {
+  img {
+    max-width: 100%;
+  }
+}

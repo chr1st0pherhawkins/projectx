@@ -49,23 +49,31 @@ table {
 
 body {
   text-align: center;
-  background-color: #000000;
+  background-color: #000;
   color: #b3e6ff;
   font-size: 20px; }
 
 h4 {
   font-size: 26px; }
 
+p {
+  font-size: 16px; }
+
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
   background-size: cover;
   height: cover;
-  padding-bottom: 200px;
-  padding-top: 200px; }
+  padding-bottom: 290px;
+  padding-top: 290px; }
   .header_wrapper .main_title, .header_wrapper .sub_title {
     text-align: center;
     color: #b3e6ff;
-    font-size: 3.5em; }
+    font-size: 3.5em;
+    background-color: rgba(128, 0, 128, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .header_wrapper .main_title:hover, .header_wrapper .sub_title:hover {
+      color: #fff; }
   .header_wrapper .sub_title {
     font-size: 2em; }
 
@@ -74,41 +82,35 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.7);
   position: fixed;
   top: 0;
-  width: 100%; }
-  nav ul li {
-    float: left;
-    list-style: none;
-    border-right: 1px solid #bbb; }
-    nav ul li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 1px 1px;
-      text-decoration: none; }
-      nav ul li a:hover {
-        background-color: #111; }
-
-nav ul {
+  width: 100%;
   float: center;
   padding: 5px; }
   nav ul li {
+    float: center;
+    list-style: none;
+    border-right: 1px solid #000099;
     display: inline-block;
-    padding: 5px 10px; }
-  nav ul a {
-    color: #b3e6ff;
-    text-decoration: none; }
-    nav ul a:hover {
-      color: #ffbb99; }
+    padding: 1px 7px; }
+    nav ul li a {
+      color: #b3e6ff;
+      display: block;
+      padding: 1px 1px;
+      text-align: center;
+      text-decoration: none; }
+      nav ul li a:hover {
+        color: rgba(179, 230, 255, 0.7); }
 
 section {
   width: 80%;
   padding-left: 10%;
   padding-right: 10%; }
   section article {
-    background-color: #000000; }
+    background-color: #000; }
+    section article p {
+      float: right; }
 
 article img {
   max-width: 100%; }
