@@ -2,7 +2,7 @@
 
 $main-background: #000000;
 $main-fontcolor: #b3e6ff;
-$hoverText: #4d4dff;
+$hoverText: #3385ff;
 
 @mixin body{
   text-align:center;
@@ -44,7 +44,6 @@ p{
 	}
 }
 
-
 nav {
 	ul {
 		list-style-type: none;
@@ -59,11 +58,11 @@ nav {
 		padding:5px;
 
      li {
-      float:left;
+      float:center;
       list-style: none;
       border-right: 1px solid #000099;
       display: inline-block;
-		padding: 5px 10px;
+		padding: 3px 10px;
         a {
          display: block;
          color: white;
@@ -72,15 +71,13 @@ nav {
          text-decoration:none;
          color: $main-fontcolor;
          &:hover {
-          background-color:#111;
+          background-color:#000;
           color:$hoverText;
         }
       }
     }
   }
 }
-
-
 
 section {
 	width:80%;
