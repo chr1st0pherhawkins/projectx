@@ -61,7 +61,6 @@ p {
 
 .header_wrapper {
   background-image: url("../optimised/headerimage.jpg");
-  background-color: white;
   background-size: cover;
   height: cover;
   padding-bottom: 290px;
@@ -83,7 +82,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.7);
   position: fixed;
   top: 0;
   width: 100%;
