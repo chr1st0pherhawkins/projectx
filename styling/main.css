@@ -49,7 +49,7 @@ table {
 
 body {
   text-align: center;
-  background-color: #000000;
+  background-color: #000;
   color: #b3e6ff;
   font-size: 20px; }
 
@@ -88,14 +88,13 @@ nav ul {
     list-style: none;
     border-right: 1px solid #000099;
     display: inline-block;
-    padding: 3px 10px; }
+    padding: 1px 7px; }
     nav ul li a {
+      color: #b3e6ff;
       display: block;
-      color: white;
-      text-align: center;
       padding: 1px 1px;
-      text-decoration: none;
-      color: #b3e6ff; }
+      text-align: center;
+      text-decoration: none; }
       nav ul li a:hover {
         background-color: #000;
         color: #3385ff; }
@@ -105,7 +104,7 @@ section {
   padding-left: 10%;
   padding-right: 10%; }
   section article {
-    background-color: #000000; }
+    background-color: #000; }
 
 article img {
   max-width: 100%; }
