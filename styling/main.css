@@ -86,7 +86,7 @@ nav ul {
   nav ul li {
     float: left;
     list-style: none;
-    border-right: 1px solid #fea814;
+    border-right: 1px solid #000099;
     display: inline-block;
     padding: 5px 10px; }
     nav ul li a {
