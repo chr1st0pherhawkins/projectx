@@ -109,11 +109,8 @@ section {
   padding-right: 10%; }
   section article {
     background-color: #000; }
-    section article .imagepractice {
-      float: left;
-      width: 200px; }
-      section article .imagepractice p {
-        float: right; }
+    section article p {
+      float: right; }
 
 article img {
   max-width: 100%; }
