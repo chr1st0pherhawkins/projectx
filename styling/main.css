@@ -73,7 +73,7 @@ p {
     padding-top: 15px;
     padding-bottom: 15px; }
     .header_wrapper .main_title:hover, .header_wrapper .sub_title:hover {
-      color: white; }
+      color: #fff; }
   .header_wrapper .sub_title {
     font-size: 2em; }
 

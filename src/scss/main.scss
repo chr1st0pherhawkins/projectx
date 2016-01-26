@@ -37,14 +37,14 @@ p {
     padding-top:15px;
     padding-bottom:15px;
     &:hover {
-      color:white;
+      color:#fff;
     }
-	}
+  }
 
-	.sub_title {
-		@extend .main_title ;
-		font-size: 2em ;
-	}
+  .sub_title {
+    @extend .main_title ;
+    font-size: 2em ;
+  }
 }
 
 nav {
@@ -86,11 +86,10 @@ section {
 	padding-right:10%;
 	article {
     background-color:$main-background;
-    
-      p{
-        float: right;
-      }
- }
+    p{
+      float: right;
+    }
+  }
 }
 
 article {
