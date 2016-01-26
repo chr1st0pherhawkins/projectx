@@ -19,7 +19,7 @@ h4 {
 }
 
 p {
-	font-size:15px ;
+	font-size:16px;
 }
 
 .header_wrapper {
@@ -86,6 +86,13 @@ section {
 	padding-right:10%;
 	article {
     background-color:$main-background;
+    .imagepractice{
+      float: left;
+      width:200px;
+      p{
+        float: right;
+      }
+    }
  }
 }
 
