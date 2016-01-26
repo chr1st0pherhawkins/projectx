@@ -101,8 +101,7 @@ nav ul {
       text-align: center;
       text-decoration: none; }
       nav ul li a:hover {
-        background-color: #000;
-        color: #3385ff; }
+        color: rgba(179, 230, 255, 0.7); }
 
 section {
   width: 80%;

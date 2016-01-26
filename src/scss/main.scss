@@ -2,11 +2,10 @@
 
 $main-background: #000;
 $main-fontcolor: #b3e6ff;
-$hover-text: #3385ff;
 
 @mixin body {
   text-align:center;
-  background-color:$main-background ; 
+  background-color:$main-background;
   color:$main-fontcolor ;
   font-size: 20px ;
 }
@@ -74,8 +73,7 @@ nav {
      text-align: center;
      text-decoration:none;
      &:hover {
-      background-color:#000;
-      color:$hover-text ;
+      color:transparentize($main-fontcolor, 0.3);
     }
   }
 }
@@ -87,7 +85,7 @@ section {
 	padding-left:10%;
 	padding-right:10%;
 	article {
-    background-color:$main-background ;
+    background-color:$main-background;
  }
 }
 
